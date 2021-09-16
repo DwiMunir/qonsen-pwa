@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osiris</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="py-4 lg:flex hidden flex-row justify-between items-center px-24 bg-white top-0 sticky z-40">
+        <div class="logo flex flex-row justify-start items-center">
+            <img src="/assets/images/logo.svg" alt="" srcset="" class="w-10 h-10 mr-2">
+            <span class="poppins-bold text-xl text-color-1">Osiris</span>
+        </div>
+        <div class="menu flex flex-row items-center justify-end gap-28">
+            <div class="menu-items flex flex-row justify-between items-center gap-20 poppins-medium text-color-1">
+                <a href="" class="duration-300 hover:text-blue-700">Home</a>
+                <a href="" class="duration-300 hover:text-blue-700">About</a>
+                <a href="" class="duration-300 hover:text-blue-700">Community</a>
+                <a href="" class="duration-300 hover:text-blue-700">Contact</a>
+            </div>
+            <div class="searchLogin flex flex-row justify-center items-center gap-10">
+                <div class=" button-color-2 w-9 h-9 rounded-full flex items-center justify-center cursor-pointer">
+                    <img src="/assets/images/icons/search.svg" alt="" srcset="" class="w-4 h-4">
+                </div>
+                <a href="" class="inline-block px-10 py-1 button-color-2 rounded-3xl poppins-medium">Login</a>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- navbar mobile -->
+    <nav class="bg-white sticky shadow-xl top-0 px-8 py-4 z-40 flex flex-row justify-between items-center lg:hidden">
+        <div class="logo flex flex-row justify-start items-center">
+            <img src="/assets/images/logo.svg" alt="" srcset="" class="w-8 h-8 mr-2">
+            <span class="poppins-bold text-md text-color-1">Osiris</span>
+        </div>
+        <div class="menuButton">
+            <span onclick="return showHideMenu('open')">
+                <img src="/assets/images/icons/menu-icon.svg" alt="" class="w-8 h-8">
+            </span>
+        </div>
+    </nav>
+    <div id="menuMobile"
+        class="bg-blue-800 fixed w-full h-full z-50 flex items-center justify-center text-white rounded-br-full -left-full -top-full duration-500">
+        <span class="absolute poppins-bold p-2 top-8 right-8" onclick="return showHideMenu('close')">x</span>
+        <div class="menu-items flex flex-col justify-center items-center gap-8 poppins-bold">
+            <a href="" class="text-xl">Home</a>
+            <a href="" class="text-xl">About</a>
+            <a href="" class="text-xl">Community</a>
+            <a href="" class="text-xl">Contact</a>
+        </div>
+    </div>
+    <!-- end navbar mobile -->
+
+    <!-- Home -->
+    <section class="lg:px-24 lg:pb-40">
+
+        <div class="px-12 pt-12 pb-20 lg:bg-color-1 rounded-xl relative lg:mt-8 w-full text-center lg:text-left">
+            <div class="home-title lg:w-1/2 z-10 relative w-full">
+                <h3 class="poppins-bold text-color-1 lg:text-3xl text-2xl">Magic Thing Happen In Your Modern Property
+                </h3>
+                <p class="poppins-light lg:text-base text-sm mt-4 lg:w-9/12">
+                    Creating modern properties is our speciality, with a lot
+                    of experience we will help you create the modern properties
+                    you want.
+                </p>
+
+                <div class="mt-8">
+                    <a href=""
+                        class="inline-block button-color-1 px-6 py-2 text-white poppins-medium mr-4 text-sm rounded-2xl antialiased ring-1 ring-blue-600 hover:text-blue-600 hover:bg-transparent duration-300">Browse
+                        Property</a>
+                    <a href=""
+                        class="lg:inline-block hidden button-color-2 px-6 py-2 poppins-medium text-base mt-2 lg:mt-0 rounded-2xl antialiased">Catalog</a>
+                </div>
+            </div>
+            <div class="layer bg-color-1 absolute w-full h-full top-0 left-0 rounded-xl lg:block hidden">
+                <div class="bg-white flex flex-row justify-start gap-16 absolute -bottom-20 px-12">
+                    <div>
+                        <h3 class="poppins-bold text-xl text-color-1">450+</h3>
+                        <p class="poppins-regular text-sm text-color-2">Property sold</p>
+                    </div>
+                    <div>
+                        <h3 class="poppins-bold text-xl text-color-1">122</h3>
+                        <p class="poppins-regular text-sm text-color-2">Satisfied Client</p>
+                    </div>
+                    <div>
+                        <h3 class="poppins-bold text-xl text-color-1">25</h3>
+                        <p class="poppins-regular text-sm text-color-2">Years Experience</p>
+                    </div>
+                </div>
+                <img src="/assets/images/home-image.png" alt="" srcset="" class="absolute right-0 -bottom-24 ">
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:flex flex-row justify-between lg:px-24 lg:gap-14 gap-3 lg:mt-12 px-8">
+        <div class="left lg:w-5/12 w-full">
+            <img src="/assets/images/type.png" alt="" srcset="" class="lg:w-5/6 w-full">
+        </div>
+        <div class="right flex-1 py-4 lg:pr-12">
+            <img src="/assets/images/icons/wave.svg" alt="" srcset="" class="w-48 hidden lg:block">
+            <div class="lg:mt-8">
+                <h1 class="type-title poppins-bold text-color-1 lg:text-3xl text-xl">
+                    Choose Your Type Easier With Us
+                </h1>
+                <p class="poppins-regular text-color-2 lg:text-base mt-6 text-sm">
+                    Finding the property model you love has never been easier. With a strategic location and easy to
+                    reach, it can be personalized easily with our agents.
+                </p>
+            </div>
+            <div class="flex flex-row justify-between items-center flex-wrap mt-6">
+                <img src="/assets/images/type-1.png" alt="" class="w-1/6">
+                <img src="/assets/images/type-2.png" alt="" class="w-1/6">
+                <img src="/assets/images/type-3.png" alt="" class="w-1/6">
+                <img src="/assets/images/type-4.png" alt="" class="w-1/6">
+                <img src="/assets/images/type-5.png" alt="" class="w-1/6">
+            </div>
+            <div class="text-center lg:text-left">
+                <a href=""
+                    class="inline-block poppins-medium button-color-1 px-6 py-2 text-white mt-8 text-sm lg:text-base rounded-2xl antialiased">Browse
+                    Property</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-16 bg-color-1 lg:px-24 py-11 relative pb-20 px-8">
+        <img src="assets/images/icons/bullet.svg" alt="" srcset=""
+            class="lg:w-32 w-16 absolute top-5 lg:top-11 left-12">
+        <img src="assets/images/icons/bullet.svg" alt="" srcset=""
+            class="lg:w-32 w-16 absolute top-5 lg:top-11 right-12">
+        <img src="assets/images/icons/bullet.svg" alt="" srcset=""
+            class="lg:w-32 w-16 absolute bottom-5 lg:bottom-11 left-12">
+        <img src="assets/images/icons/bullet.svg" alt="" srcset=""
+            class="lg:w-32 w-16 absolute bottom-5 lg:bottom-11 right-12">
+
+        <div class="title text-center">
+            <h3 class="text-green-400 poppins-bold">Why Choose Us</h3>
+            <h1 class="poppins-bold text-color-1 lg:text-3xl text-2xl mt-6">With 25 Years Of Experience</h1>
+            <p class="poppins-light text-color-2 mt-3 text-sm">We are ready to help you find the your dream house</p>
+        </div>
+
+        <div class="content flex flex-wrap flex-row justify-between items-center mt-24 gap-16 relative z-10">
+            <div class="px-8 py-6 bg-white rounded-lg lg:flex-1 pb-20 w-full text-center">
+                <img src="/assets/images/icons/file.svg" alt="" srcset="" class="lg:w-16 w-20 mx-auto">
+                <h1 class="poppins-bold text-color-1 text-lg lg:mt-4 mt-8">Choose your type</h1>
+                <p class="poppins-light text-color-2 text-sm mt-4">Find what property you want with the locations, and
+                    easily choose the type.</p>
+            </div>
+            <div class="px-8 py-6 bg-white rounded-lg lg:flex-1 pb-20 w-full text-center">
+                <img src="/assets/images/icons/message.svg" alt="" srcset="" class="lg:w-16 w-20 mx-auto">
+                <h1 class="poppins-bold text-color-1 text-lg lg:mt-4 mt-8">Contact Number </h1>
+                <p class="poppins-light text-color-2 text-sm mt-4">Find the contact number that are listed in your type
+                    property and come to see the property you want directly. </p>
+            </div>
+            <div class="px-8 py-6 bg-white rounded-lg lg:flex-1 pb-20 w-full text-center">
+                <img src="/assets/images/icons/draft.svg" alt="" srcset="" class="lg:w-16 w-20 mx-auto">
+                <h1 class="poppins-bold text-color-1 text-lg lg:mt-4 mt-8">Easy & Secure Payment</h1>
+                <p class="poppins-light text-color-2 text-sm mt-4">Ready to get your property? sign the contract and
+                    your property ready for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="lg:px-24 px-12 pt-28 pb-20">
+        <div class="title text-center lg:text-left">
+            <h1 class="text-color-1 poppins-bold text-2xl lg:text-3xl">Featured Articles & Tips</h1>
+        </div>
+        <div class="content flex flex-row justify-between flex-wrap mt-20">
+            <div class="main-article lg:flex-1 w-full lg:pr-16 lg:mb-0 mb-12">
+                <img src="/assets/images/main-article.png" alt="">
+                <div class="content-article mt-12">
+                    <h2 class="text-color-1 poppins-bold lg:text-2xl text-xl">Hallway Interior with Cabinet and Potted
+                        Plant near
+                        the door
+                    </h2>
+                    <p class="poppins-regular text-color-2 text-sm mt-8">
+                        The inside of your home is likely already decked out with houseplants that give your space
+                        personality, but guess what: Your front door deserves some plant love, too. Whether you've got a
+                        shady porch perfect for trailing English ivy, read more
+                    </p>
+                </div>
+            </div>
+            <div class="sub-article lg:flex-1 w-full">
+                <div class="flex lg:flex-row-reverse flex-row justify-between">
+                    <img src="/assets/images/sub-article.png" alt="" class="w-24 h-24 mr-4 lg:mr-0">
+                    <div class="flex-1">
+                        <h3 class="text-sm poppins-bold text-color-1 duration-300 hover:text-blue-600"><a href="">3
+                                interior design tips that make a rented spacefeel like home</a></h3>
+                        <p class="text-color-2 poppins-light text-sm mt-2">Design2TasteBlog</p>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row-reverse flex-row justify-between mt-12">
+                    <img src="/assets/images/sub-article-2.png" alt="" class="w-24 h-24 mr-4 lg:mr-0">
+                    <div class="flex-1">
+                        <h3 class="text-sm poppins-bold text-color-1 duration-300 hover:text-blue-600"><a href="">How to
+                                Protect Furniture While Renovating</a></h3>
+                        <p class="text-color-2 poppins-light text-sm mt-2">Ivan Dimitrijevic</p>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row-reverse flex-row justify-between mt-12">
+                    <img src="/assets/images/sub-article-3.png" alt="" class="w-24 h-24 mr-4 lg:mr-0">
+                    <div class="flex-1">
+                        <h3 class="text-sm poppins-bold text-color-1 duration-300 hover:text-blue-600"><a href="">Don’t
+                                Lose Your Marbles: How to Care for</a> Your
+                            Marble Furniture</h3>
+                        <p class="text-color-2 poppins-light text-sm mt-2">France & Son</p>
+                    </div>
+                </div>
+                <div class="flex lg:flex-row-reverse flex-row justify-between mt-12">
+                    <img src="/assets/images/sub-article-4.png" alt="" class="w-24 h-24 mr-4 lg:mr-0">
+                    <div class="flex-1">
+                        <h3 class="text-sm poppins-bold text-color-1 duration-300 hover:text-blue-600"><a href="">DEAR
+                                PEOPLE WHO LIVE IN FANCY TINY HOUSES</a></h3>
+                        <p class="text-color-2 poppins-light text-sm mt-2">Lauren Modery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-12 lg:px-24 lg:mt-28 text-center lg:text-left pb-12">
+        <div class="flex flex-row justify-between">
+            <div class="content flex-1">
+                <h1 class="poppins-bold text-color-1 lg:text-3xl text-2xl">
+                    Friendly Support That Cares
+                </h1>
+                <div class="image flex-1 lg:hidden block mt-8">
+                    <img src="/assets/images/ilustration.png" alt="" srcset="" class="w-10/12 mx-auto">
+                </div>
+                <p class="text-base poppins-light text-color-2 mt-8">
+                    Customer Service on-line 7x24 Hours. So don’t be worry, you’re special and we ready to hear it.
+                </p>
+                <div class="mt-8">
+                    <a href=""
+                        class="lg:inline-block block w-max button-color-1 poppins-medium text-sm text-white px-6 py-2 rounded-2xl antialiased lg:mr-2 mx-auto mb-4">Help
+                        Center &
+                        FAQ</a>
+                    <a href=""
+                        class="lg:inline-block block w-max button-color-2 poppins-medium text-sm text-color-1 px-6 py-2 rounded-2xl antialiased mx-auto mb-4">Make
+                        a Call</a>
+                </div>
+            </div>
+            <div class="image flex-1 hidden">
+                <img src="/assets/images/ilustration.png" alt="" srcset="" class="w-10/12">
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-color-1 lg:px-24 px-12 lg:mt-28 text-center py-11 pb-20">
+        <h1 class="text-color-1 poppins-bold text-3xl">Get Started With Us</h1>
+        <p class="poppins-light text-color-2 text-lg lg:w-7/12 lg:mx-auto mt-8">Creating modern properties is our
+            speciality,
+            with a lot
+            of
+            experience we
+            will help you create the modern properties you want.</p>
+        <a href=""
+            class="button-color-1 text-white px-6 py-2 mt-8 inline-block poppins-medium text-sm antialiased rounded-2xl">Browse
+            Property</a>
+    </section>
+
+    <footer class="lg:px-24 px-12 py-11 pb-16 bg-color-2 flex lg:flex-row justify-between flex-wrap">
+        <div class="lg:flex-1 w-1/2 mb-8 lg:mb-0">
+            <div class="logo flex flex-row justify-start items-center">
+                <img src="/assets/images/logo.svg" alt="" srcset="" class="w-8 h-8 mr-2">
+                <span class="poppins-bold text-lg text-white">Osiris</span>
+            </div>
+            <p class="text-white poppins-light text-sm mt-4">
+                Osiris Real Estate International
+            </p>
+            <p class="text-white poppins-light text-sm mt-8">
+                &copy; 2021-2021
+            </p>
+        </div>
+        <div class="lg:flex-1 w-1/2 mb-8 lg:mb-0 flex flex-col gap-4">
+            <h1 class="text-white poppins-bold text-lg">Terms & policies</h1>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">terms of
+                service</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">medium
+                rules</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">privacy
+                policy</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">partner
+                program terms</a>
+        </div>
+        <div class="lg:flex-1 w-1/2 mb-8 lg:mb-0 flex flex-col gap-4">
+            <h1 class="text-white poppins-bold text-lg">Company</h1>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">about</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">our
+                timeline</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">contact</a>
+            <a href="" class="text-white poppins-light text-sm capitalize duration-300 hover:text-blue-600">careers</a>
+        </div>
+        <div class="lg:flex-1 w-1/2 mb-8 lg:mb-0 flex flex-col gap-4">
+            <h1 class="text-white poppins-bold text-lg">Office</h1>
+            <p class="text-white poppins-light text-sm capitalize duration-300">PT Qodr Membangun Negeri</p>
+            <p class="text-white poppins-light text-sm capitalize duration-300">sukorame rt.17, mangunan, dlingo, Bantul
+            </p>
+            <p class="text-white poppins-light text-sm capitalize duration-300">Yogyakarta, Indonesia</p>
+            <p class="text-white poppins-light text-sm capitalize duration-300">hive@qodr.or.id</p>
+        </div>
+    </footer>
+
+
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
